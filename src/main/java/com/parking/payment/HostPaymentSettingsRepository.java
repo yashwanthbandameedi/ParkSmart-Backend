@@ -1,0 +1,12 @@
+
+package com.parking.payment;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface HostPaymentSettingsRepository
+        extends JpaRepository<HostPaymentSettings, Long> {
+
+    Optional<HostPaymentSettings> findByHostEmailIgnoreCase(String hostEmail);
+}

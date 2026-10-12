@@ -18,7 +18,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/payment-settings")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://park-smart-frontend.vercel.app"})
 public class HostPaymentController {
 
     private final HostPaymentSettingsRepository repository;

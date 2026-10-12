@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/slots")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://park-smart-frontend.vercel.app"})
 public class ParkingSlotController {
     private final ParkingSlotRepository repository;
     public ParkingSlotController(ParkingSlotRepository repository) { this.repository = repository; }

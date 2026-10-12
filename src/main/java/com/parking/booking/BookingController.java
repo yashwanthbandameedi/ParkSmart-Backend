@@ -17,7 +17,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/bookings")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://park-smart-frontend.vercel.app"})
 public class BookingController {
 
     private final BookingRepository bookingRepository;
